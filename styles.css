@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.logo {
+  width: 90px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+}
+
+.list-items {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.list-item a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border: 1px #fff solid;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  /* background-color: rgb(56, 192, 220); */
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+}
+
+.list-item a:hover {
+  background: #fff;
+  color: black;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* clip-path: circle(180vh at 50% -80vh); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%); */
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+}
+
+/* **** Background-Video **** */
+.background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.hero-content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-container,
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  flex-direction: column;
+}
+
+.hero-header {
+  font-size: 3rem;
+}
+.hero-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hero-phrase {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.test {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-bottom-navs,
+.hero-handles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-bottom-navs-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: text-decoration 300ms ease-in;
+}
+
+.hero-bottom-navs-link:hover {
+  text-decoration: underline;
+}
+
+.hero-handles {
+  gap: 1rem;
+}
+
+.hero-handles a {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+}
+.bx {
+  font-size: 2rem;
+}
